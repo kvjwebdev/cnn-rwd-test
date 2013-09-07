@@ -1,0 +1,181 @@
+
+/* #Site Styles
+================================================== */
+body{
+	background: #fbfbf3 url('http://i.cdn.turner.com/cnn/.e/img/3.0/content/homepage/refresh/bg-main.png') 0 0 repeat-x;
+}
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+   box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+ }
+
+.site-header {
+ 	background: #fbfbf3 url('/images/grey_header_web.jpg') 0 0 repeat-x;
+    padding: 10px 0 5px 0;
+    text-align: center;
+    box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1) inset;
+	text-shadow: 1px 1px #ff0000;
+}
+
+a.twitter_handle{
+	text-decoration: none;
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 1.25em;
+	text-shadow: none;
+}
+.site-header a:hover{
+	color: #1E90FF;
+	text-decoration: underline;
+}
+.site-header h3{
+	color: #fff;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.site-header img{
+	border: 5px;
+}
+.cnnbrk_logo{
+	margin:auto;
+	background: url('/images/cnnbrk_avatar.gif') no-repeat center center;
+	background-size: 100% 100%;
+	width: 75px;
+	height: 75px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+.divider{
+	height: 5px;
+	margin: 10px;
+	background-color: #ca0002;
+	overflow: hidden;
+}
+.site-footer{
+	padding: 10px 0px;
+	text-align: center;
+	font: normal 10px/14px arial,Helvetica,sans-serif;
+}
+.tweet-container-one, .tweet-container-two{
+	background-color: #f3f3f3;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	box-shadow: 10px 10px 5px #888888;
+	-webkit-box-shadow: 10px 10px 5px #888888;
+	-moz-box-shadow: 10px 10px 5px #888888;
+}
+.tweet-card{
+	margin: 0px;
+	padding: 0px;
+}
+.tweet-card li{
+	border-bottom: 1px solid #B8860B;
+	padding: 15px;
+	height: 100px;
+	margin: 0px; 
+	position: relative;
+}
+.tweet-box-header img{
+	widht: 45px;
+	height: 45px;
+}
+
+.tweet-box-header{
+	background-color: #FFDAB9;
+	-webkit-border-radius: 6px 6px 0px 0px;
+	-moz-border-radius: 6px 6px 0px 0px;
+	border-radius: 6px 6px 0px 0px;
+}
+
+.tweet-box-header a{
+	position: relative;
+	bottom: 15px;
+}
+.tweet-card li section{
+	display: inline-block;
+	position: absolute;
+	left: 65px;
+	top: 0px;
+	padding: 10px;
+	color: black;
+}
+.tweet-card li section h6{
+	display: inline;
+	font-weight: bold;
+}
+
+.tweet-card li section p{
+	margin: 0px;
+}
+
+.tweet-card a.twitter_handle{
+	font-size: 0.75em;
+}
+.tweet-card section span{
+	font-size: 0.75em;
+	float: right;
+	color: #888;
+	cursor: pointer;
+}
+.tweet-img{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width:50px;
+	height:50px;
+	background: url('/images/cnnbrk_avatar.gif') no-repeat center center;
+	background-size: 50px 50px;
+}
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		.tweet-card li section{
+			padding: 5px;
+		}
+		.tweet-card li p{
+			font-size: 0.85em;
+			line-height: 18px;
+		}
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.tweet-container-two .tweet-box-header{
+			display: none;
+		}
+		.tweet-container-one{
+			-webkit-border-radius: 6px 6px 0px 0px;
+			-moz-border-radius: 6px 6px 0px 0px;
+			border-radius: 6px 6px 0px 0px;
+		}
+		.tweet-container-two{
+			-webkit-border-radius: 0px 0px 6px 6px;
+			-moz-border-radius: 0px 0px 6px 6px;
+			border-radius: 0px 0px 6px 6px;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.tweet-card li p{
+			font-size: 0.80em;
+			line-height: 15px;
+		}
+	}

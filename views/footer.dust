@@ -1,0 +1,7 @@
+<div class="container">
+	<footer class="sixteen columns site-footer">
+		<div class="divider"></div>
+		<img class"cnn_footer_logo" src="images/footer_cnn_logo.png"></img>
+		<span>  CNN© 2013 Cable News Network. Turner Broadcasting System, Inc. All Rights Reserved.</span>
+	</footer>
+</div>
