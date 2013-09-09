@@ -15,6 +15,7 @@ var app = express();
 
 // assign the dust engine to .dust files
 app.engine('dust', cons.dust);
+cons.dust.helpers = require('dustjs-helpers');
 
 // all environments
 app.set('port', process.env.PORT || 3000);

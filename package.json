@@ -10,9 +10,8 @@
     "jade": "*",
     "sass": "*",
     "consolidate": "*",
-    "dustjs-linkedin": "*",
     "dust":"*",
-    "request":"*",
-    "querystring":"*"
+    "dustjs-helpers": "*",
+    "twit": "*"
   }
 }

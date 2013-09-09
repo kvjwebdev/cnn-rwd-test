@@ -9,124 +9,31 @@
 			<hr />
 		</div> <!-- Header Text -->
 		<div class="eight columns tweet-container-one"> <!-- First Tweet Container -->
-			<div class="tweet-box-header">
-				<img src="/images/twitter-icon.png">
-				<a href="https://twitter.com/cnnbrk" class="twitter_handle">@cnnbrk</a> 
-			</div>
-
-			<!-- Hardcoding Tweet Data due to issues with OAuth Authentication -->
+			{>tweetHead /}
 			<ul class="tweet-card">
-				
-				<li>
-					<div class="tweet-img"></div>
-					<section>
-						<h6>CNN Breaking News</h6>
-						<a href="https://twitter.com/cnnbrk" class="twitter_handle">&nbsp;@cnnbrk</a>
-						<span>1h</span>
-						<p>Tokyo wins bid to host 2020 Summer Olympics over Istanbul and Madrid. http://on.cnn.com/1aVAcwf</p> 
-					</section>
-				</li>
+				{#json}
+					{@select key="{$idx}"}
+	  	 				{@lt value=5}
+	         				{>tweets /}
+	       			 	{/lt}	
+	       			{/select}
+				{/json}
+			</ul>	
+		</div> <!-- END First Tweet Container -->
 
-				<li>
-					<div class="tweet-img"></div>
-					<section>
-						<h6>CNN Breaking News</h6>
-						<a href="https://twitter.com/cnnbrk" class="twitter_handle">&nbsp;@cnnbrk</a>
-						<span>2h</span>
-						<p>I'll sit down Monday w/ @BarackObama at White House to discuss #Syria options. The interview will air Monday in @CNNSitRoom 6PM ET</p> 
-					</section>
-				</li>
-				
-				<li>
-					<div class="tweet-img"></div>
-					<section>
-						<h6>CNN Breaking News</h6>
-						<a href="https://twitter.com/cnnbrk" class="twitter_handle">&nbsp;@cnnbrk</a>
-						<span>3h</span>
-						<p>Check out more details on videos WH showed senators to convince them limited military response in #Syria is needed. http://on.cnn.com/15Htrgq</p> 
-					</section>
-				</li>
-				<li>
-					<div class="tweet-img"></div>
-					<section>
-						<h6>CNN Breaking News</h6>
-						<a href="https://twitter.com/cnnbrk" class="twitter_handle">&nbsp;@cnnbrk</a>
-						<span>2h</span>
-						<p>@cnnbrk @CNNPolitics I certainly hope that those videos aren't released 2 the public! No one needs 2 see how those innocent people suffered!</p> 
-					</section>
-				</li>
-				
-				<li>
-					<div class="tweet-img"></div>
-					<section>
-						<h6>CNN Breaking News</h6>
-						<a href="https://twitter.com/cnnbrk" class="twitter_handle">&nbsp;@cnnbrk</a>
-						<span>2h</span>
-						<p>@cnnbrk Obama has an agenda. When he spoke about a limited assault on Syria and no need of ground troops he stumbled over his words.#NoTrust</p> 
-					</section>
-				</li>
-			</ul>
-		</div> <!-- First Tweet Container -->
 		<div class="eight columns tweet-container-two"> <!-- Second Tweet Container -->
-			<div class="tweet-box-header">
-				<img src="/images/twitter-icon.png">
-				<a href="https://twitter.com/cnnbrk" class="twitter_handle">@cnnbrk</a> 
-			</div>
+			{>tweetHead /}
 			<ul class="tweet-card">
-				<li>
-					<div class="tweet-img"></div>
-					<section>
-						<h6>CNN Breaking News</h6>
-						<a href="https://twitter.com/cnnbrk" class="twitter_handle">&nbsp;@cnnbrk</a>
-						<span>2h</span>
-						<p>@cnnbrk You can bet that Obama's speech writers are working overtime to make a convincing argument for attacking Syria.</p> 
-					</section>
-				</li>
-				<li>
-					<div class="tweet-img"></div>
-					<section>
-						<h6>CNN Breaking News</h6>
-						<a href="https://twitter.com/cnnbrk" class="twitter_handle">&nbsp;@cnnbrk</a>
-						<span>2h</span>
-						<p>#CNN's @jaketapper has obtained disturbing video from Syria shown by the Obama administration to US senators. http://on.cnn.com/15HtGZ3</p> 
-					</section>
-				</li>
-				<li>
-					<div class="tweet-img"></div>
-					<section>
-						<h6>CNN Breaking News</h6>
-						<a href="https://twitter.com/cnnbrk" class="twitter_handle">&nbsp;@cnnbrk</a>
-						<span>4h</span>
-						<p>Exclusive: Jake Tapper has videos of alleged Syrian chemical weapons use that WH showed senators to bolster strike support. More soon.</p> 
-					</section>
-				</li>
-				<li>
-					<div class="tweet-img"></div>
-					<section>
-						<h6>CNN Breaking News</h6>
-						<a href="https://twitter.com/cnnbrk" class="twitter_handle">&nbsp;@cnnbrk</a>
-						<span>6h</span>
-						<p>EU calls for "clear and strong" international response to Assad regime's suspected use of chemical weapons. http://on.cnn.com/1afdIn6</p> 
-					</section>
-				</li>
-				<li>
-					<div class="tweet-img"></div>
-					<section>
-						<h6>CNN Breaking News</h6>
-						<a href="https://twitter.com/cnnbrk" class="twitter_handle">&nbsp;@cnnbrk</a>
-						<span>9h</span>
-						<p>Australian PM Kevin Rudd concedes election defeat as exit polls indicate a victory for challenger Tony Abbott. http://on.cnn.com/1dPJUS5</p> 
-					</section>
-				</li>
-			</ul>
-		</div><!-- Second Tweet Container -->
+				{#json}
+					{@select key="{$idx}"}
+	  	 				{@gte value=5}
+	         				{>tweets /}
+	       			 	{/gte}	
+	       			{/select}
+				{/json}
+			</ul>	
+		</div><!-- END Second Tweet Container -->
 	</div><!-- container -->
-
-	<!--<ul>
-		{#tweet}
-  			<li>{text}</li>{~n}
-		{/tweet}
-	</ul> -->
 
 <!-- End Document
 ================================================== -->
