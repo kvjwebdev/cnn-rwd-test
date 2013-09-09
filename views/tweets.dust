@@ -1,0 +1,9 @@
+<li>
+	<div class="tweet-img" data-src={user.profile_image_url}></div>
+	<section>
+		<h6>{user.name}</h6>
+		<a href="https://twitter.com/{user.screen_name}" class="twitter_handle">&nbsp;@{user.screen_name}</a>
+		<span class="timeAgo">{created_at}</span>
+		<p>{text}</p> 
+	</section>
+</li>
