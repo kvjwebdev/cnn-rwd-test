@@ -11,6 +11,7 @@
     "sass": "*",
     "consolidate": "*",
     "dust":"*",
+    "dustjs-linkedin": "*",
     "dustjs-helpers": "*",
     "twit": "*"
   }
