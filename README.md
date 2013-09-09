@@ -10,3 +10,8 @@ Steps to Run
 Known Issue
 ============
 Ran into some issues with Twitter OAuth v1.1 API, so the tweets are hardocded at this point.
+
+Update
+========
+Spent few hours later to fix the Twitter Integration Issue and refactoring the code.
+
